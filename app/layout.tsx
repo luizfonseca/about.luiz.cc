@@ -1,18 +1,19 @@
-import type { Metadata } from "next"
-import { Inter } from 'next/font/google'
-import "./globals.css"
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Luiz Fonseca - Software Engineer",
-  description: "Software Engineer passionate about impactful projects and technology",
-}
+  description:
+    "Software Engineer passionate about impactful projects and technology with +15 years of experience.",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" className="dark">
@@ -20,6 +21,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }
-
